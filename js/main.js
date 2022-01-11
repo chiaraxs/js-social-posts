@@ -29,10 +29,10 @@ const posts = [
     {  
         id: 2,
         authorName: 'Jayne Lowest',
-        authorImage: '',
+        authorImage: 'https://unsplash.it/300/300?image=21',
         date: '01/11/2021',
         postText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        postImage: 'https://i.picsum.photos/id/924/300/300.jpg?hmac=p45YuBoKzB-EkoHGMxj9apqgEx1xpuuSUUzhKEldxGM',
+        postImage: 'https://unsplash.it/600/300?image=101',
         likesNumber: 20
     
     },
@@ -40,10 +40,10 @@ const posts = [
     {  
         id: 3,
         authorName: 'Ambra Kest',
-        authorImage: '',
+        authorImage: 'https://unsplash.it/300/300?image=67',
         date: '04/04/2021',
         postText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        postImage: 'https://i.picsum.photos/id/742/300/300.jpg?hmac=3g8utVmYFCNJz0roceHrGIy_9761BtMT7bv7uGgzEiE',
+        postImage: 'https://unsplash.it/600/300?image=15',
         likesNumber: 168
     
     },
@@ -51,10 +51,10 @@ const posts = [
     {  
         id: 4,
         authorName: 'Will Cage',
-        authorImage: '',
+        authorImage: 'https://unsplash.it/300/300?image=90',
         date: '10/16/2021',
         postText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        postImage: 'https://i.picsum.photos/id/199/300/300.jpg?hmac=WSomwAzN0BulyzX9gcve6rdVDwTe__6SrkvHPxmfc34',
+        postImage: 'https://unsplash.it/600/300?image=456',
         likesNumber: 234
     
     },
@@ -62,10 +62,10 @@ const posts = [
     {  
         id: 5,
         authorName: 'Cindy Looper',
-        authorImage: '',
+        authorImage: 'https://unsplash.it/300/300?image=123',
         date: '07/08/2021',
         postText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        postImage: 'https://i.picsum.photos/id/738/300/300.jpg?hmac=ZNTq_YjwXyW1vg5D1bZKpImdTfHZqhHTZtY7Anjumjc',
+        postImage: 'https://unsplash.it/600/300?image=675',
         likesNumber: 25
     
     },
