@@ -126,11 +126,14 @@ for (let i = 0; i < posts.length; i++){
 // Se clicchiamo sul tasto “Mi Piace” cambiamo il colore al testo del bottone e incrementiamo il counter dei likes relativo.
 // Salviamo in un secondo array gli id dei post ai quali abbiamo messo il like.
 
+// creo array vuoto in cui salvare gli id dei post con like
+let likesPost = [];
 
-// 5. aggancio il js-like-button e creo ciclo for per tutti i buttons (nb.queryselectorALL)
+// 5. aggancio il js-like-button e creo ciclo for per tutti i buttons
 // aggiungo evento al click -> change text color
-const likesButtons = document.querySelectorAll('.js-like-button');
-const likesContainers = document.querySelectorAll('.js-likes-counter');
+const likesButtons = document.querySelectorAll('.js-like-button'); // n.b. -> querySelectorAll seleziona/raggruppa tutti i buttons (altrimenti prendeva solo il primo)
+const likesContainers = document.querySelectorAll('.js-likes-counter'); // n.b. vedi sopra
+
 
 for (let i = 0; i < likesButtons.length; i++) {
     likesButtons[i].addEventListener('click', function(){
@@ -138,14 +141,25 @@ for (let i = 0; i < likesButtons.length; i++) {
 
         if (likesButtons[i].classList.contains('like-button--liked')){
             this.classList.remove('like-button--liked');
-            posts[i].likesNumber--;
+            posts[i].likesNumber--; // decremento likes
 
         } else {
             this.classList.add('like-button--liked');
-            posts[i].likesNumber++;
+            posts[i].likesNumber++; // incremento likes
         }
 
         likesContainers[i].innerHTML = posts[i].likesNumber;
 })
 }
 
+// // lettura semantica dal ciclo for poco sopra ->
+// scateno l'evento al click : 
+// se -> nel button corrente [i] è contenuta già la class 'like-button-liked' -> allora rimuovi la classe 'like-button' (aka 'non mi piace') ->
+// i likesNumber contenuti nell'array di oggetti decrementano
+
+// altrimenti -> aggiungi la classe 'liked-button-liked' (aka 'mi piace') ->
+// i likesNumber contenuti nell'array di oggetti incrementano
+
+// nel likesContainer [i], ossia quello corrente al click, stampa con la proprietà innerHtml il valore di likesNumber 
+// (che vengono incrementati o decrementati dall'if/else) modificando IL VALORE dell'oggetto likesNumber nell'array di oggetti 'posts'
+// -> quindi mi permette di mantenere sincronizzato il valore del numero di like con quello salvato nell’oggetto
