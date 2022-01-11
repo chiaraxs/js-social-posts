@@ -75,7 +75,7 @@ const posts = [
 // Milestone 2
 // Prendendo come riferimento il layout di esempio presente nell’html, stampiamo i post del nostro feed.
 
-// 3. creoo funzione per stampare posts nel container
+// 3. creo funzione per stampare posts nel container
 function printPost (container, card) {
     
     container.innerHTML += `
@@ -122,10 +122,18 @@ for (let i = 0; i < posts.length; i++){
 
 
 
-
-
-
 // Milestone 3
 // Se clicchiamo sul tasto “Mi Piace” cambiamo il colore al testo del bottone e incrementiamo il counter dei likes relativo.
 // Salviamo in un secondo array gli id dei post ai quali abbiamo messo il like.
+
+// 5. aggancio il js-like-button e creo ciclo for per tutti i buttons (nb.queryselectorALL)
+// aggiungo evento al click -> change text color
+const likesButton = document.querySelectorAll('.js-like-button');
+
+for (let i = 0; i < likesButton.length; i++) {
+    likesButton[i].addEventListener('click', function(){
+        this.classList.add('like-button--liked'); 
+        this.classList.remove('like-button');
+    })
+}
 
