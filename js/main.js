@@ -137,7 +137,7 @@ for (let i = 0; i < likesButtons.length; i++) {
         
 
         if (likesButtons[i].classList.contains('like-button--liked')){
-            this.classList.remove('like-button');
+            this.classList.remove('like-button--liked');
             posts[i].likesNumber--;
 
         } else {
