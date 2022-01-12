@@ -124,10 +124,12 @@ for (let i = 0; i < posts.length; i++){
 
 // Milestone 3
 // Se clicchiamo sul tasto “Mi Piace” cambiamo il colore al testo del bottone e incrementiamo il counter dei likes relativo.
-// Salviamo in un secondo array gli id dei post ai quali abbiamo messo il like.
 
-// creo array vuoto in cui salvare gli id dei post con like
-let likesPost = [];
+// BONUS
+// Formattare le date in formato italiano (gg/mm/aaaa)
+// Gestire l’assenza dell’immagine profilo con un elemento di fallback che contiene le iniziali dell’utente (es. Luca Formicola > LF).
+// Al click su un pulsante “Mi Piace” di un post, se abbiamo già cliccato dobbiamo decrementare il contatore e cambiare il colore del bottone. -> DONE
+
 
 // 5. aggancio il js-like-button e creo ciclo for per tutti i buttons
 // aggiungo evento al click -> change text color
@@ -136,8 +138,9 @@ const likesContainers = document.querySelectorAll('.js-likes-counter'); // n.b. 
 
 
 for (let i = 0; i < likesButtons.length; i++) {
-    likesButtons[i].addEventListener('click', function(){
+    likesButtons[i].addEventListener('click', function(e){
         
+        e.preventDefault(); // evita che i post risalgano in page dopo il like -> https://www.w3schools.com/jsref/event_preventdefault.asp
 
         if (likesButtons[i].classList.contains('like-button--liked')){
             this.classList.remove('like-button--liked');
